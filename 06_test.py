@@ -74,3 +74,5 @@ D = Discriminator()
 for i in range(10000):
     D.train(generate_real(), torch.FloatTensor([1.0]))
     D.train(generate_random(4), torch.FloatTensor([0.0]))
+
+D.plot_progress()
